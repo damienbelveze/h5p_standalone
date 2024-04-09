@@ -8,7 +8,7 @@ author: Damien Belvèze
 <script>
   (function() {
     let h5pContainer = document.getElementById("h5p-container-8"); // div tag ID
-    let h5pJsonPath = 'consequences'; // YOUR H5P FILE (THIS IS A FOLDER PATH)
+    let h5pJsonPath = 'H5P/consequences'; // YOUR H5P FILE (THIS IS A FOLDER PATH)
 
     if (!document.getElementById('h5p-bundle-js')) {
       let script = document.createElement('script');
