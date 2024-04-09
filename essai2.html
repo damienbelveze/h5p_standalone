@@ -8,8 +8,8 @@
     <div id="h5p-container-8"></div> // YOUR H5P FILE (THIS IS A FOLDER PATH)
 <script>
   (function() {
-    let h5pContainer = document.getElementById("h5p-container-8"); // div tag ID
-    let h5pJsonPath = 'H5P/consequences'; // YOUR H5P FILE (THIS IS A FOLDER PATH)
+    let h5pContainer = document.getElementById("h5p-container-8"); 
+    let h5pJsonPath = 'H5P/consequences'; 
 
     if (!document.getElementById('h5p-bundle-js')) {
       let script = document.createElement('script');
@@ -23,6 +23,12 @@
         h5pJsonPath: h5pJsonPath,
         frameJs: 'libs/h5p/frame.bundle.js',
         frameCss: 'libs/h5p/styles/h5p.css',
+        export: false,
+        icon: true,
+        downloadUrl: 'consequences.h5p',
+        fullScreen: true, 
+        embed: true,
+        embedCode:'<iframe width="700" height="700" src="https://damienbelveze.github.io/h5p_standalone/essai2.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>',
       }
       new H5PStandalone.H5P(h5pContainer, options);
     });
