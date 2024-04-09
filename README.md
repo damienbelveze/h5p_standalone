@@ -39,6 +39,14 @@ Here we provide a working example on how to turn H5P tools fully automonous in G
         h5pJsonPath: h5pJsonPath,
         frameJs: 'libs/h5p/frame.bundle.js',
         frameCss: 'libs/h5p/styles/h5p.css',
+        frame: true, // optional but required if we want to display export and embed options
+        export: true,
+        icon: true,
+        downloadUrl: 'consequences.h5p',
+        fullScreen: true, 
+        embed: true,
+        embedCode:'<iframe width=":w" height=":h" src="github page link to h5P" frameBorder="0" scrolling="no" styles="width:100%"></iframe>',
+      }
       }
       new H5PStandalone.H5P(h5pContainer, options);
     });
